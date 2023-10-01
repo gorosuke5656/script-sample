@@ -11,10 +11,8 @@ cd /d %~dp0
 set filename1=%mm%%dd%_%hh%%mn%_%ss%_IPaddress-status
 set filename2=%mm%%dd%_%hh%%mn%_%ss%_GW-state-status
 echo IPaddress-status result>>%filename1%.txt
-echo -------------------------------------------------------------->>%filename%.txt
+echo -------------------------------------------------------------->>%filename1%.txt
 ipconfig>>%filename1%.txt
-echo -------------------------------------------------------------->>%filename%.txt
-echo;
 echo GW-status-status>>%filename2%.txt
-echo -------------------------------------------------------------->>%filename%.txt
+echo -------------------------------------------------------------->>%filename2%.txt
 route print>>%filename2%.txt
