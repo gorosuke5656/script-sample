@@ -8,8 +8,8 @@ set ss=%time00:~6,2%
 
 @echo on
 cd /d %~dp0
-set filename=%mm%%dd%_%hh%%mn%_%ss%_PING_DNS-result
-echo PING/DNS result>>%filename%.txt
+set filename=%mm%%dd%_%hh%%mn%_%ss%_PING-result
+echo PING result>>%filename%.txt
 echo -------------------------------------------------------------->>%filename%.txt
 echo Ping result(IPv4) MTU1500>>%filename%.txt
 echo -------------------------------------------------------------->>%filename%.txt
