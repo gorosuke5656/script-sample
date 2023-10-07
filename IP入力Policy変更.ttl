@@ -1,0 +1,39 @@
+;1.SSH 接続
+
+USERNAME = 'admin'
+PASSWORD = 'root123'
+
+inputbox '接続先を入力してください。' '接続先'
+ADDR = inputstr
+
+COMMAND = ADDR
+strconcat COMMAND ' /ssh /auth=password /user='
+strconcat COMMAND USERNAME
+strconcat COMMAND ' /passwd='
+strconcat COMMAND PASSWORD
+
+connect COMMAND 
+
+;2.ログ取得開始
+logopen "C:\Users\ユーザー\Documents\FW01.log" 0 0
+
+;3.コマンド実行
+
+wait ">"
+sendln "configure"
+
+wait "#"
+sendln "set security policies default-policy permit-all"
+
+wait "#"
+sendln "commit"
+
+wait "#"
+sendln "run show configuration security policies | display set"
+
+;4.ログ取得終了
+wait "#"
+logclose
+
+;5.ログアウト
+closett
