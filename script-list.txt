@@ -2,5 +2,7 @@
   ip-state-new.bat　  :自身のIPアドレスおよびデフォルトゲートウェイの結果をファイルに格納 　
   PING-check.bat　　  ：埋め込みしたv4、v6アドレスにPINGを実施し、結果をファイルに格納 　
   PING-check-1.bat    ：入力したIPアドレスに対してPINGを実施し、結果をファイルに格納
+  PING-check-2.bat    :　埋め込まれたv4アドレスにPINGを実施し、結果をファイルに格納(応答結果を〇、×で表示）
+  PING-check-3.bat    :　入力したIPアドレスに対してPINGを実施し、結果をファイルに格納(応答結果を〇、×で表示）
   Server-syslog.ps1    : PSによる簡易syslogサーバ
   IP入力Policy変更.ttl :Juniper SRXにおいてセキュリティポリシーを表示するためのテラタームマクロ
