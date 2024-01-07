@@ -7,6 +7,10 @@
   PING-check-3.bat    :　入力したIPアドレスに対してPINGを実施し、結果をファイルに格納(応答結果を〇、×で表示）
 　DNS-Web-check.bat  :v4/v6の名前解決及びcurlによるv4/v6でのレスポンス確認結果をファイルに格納及びブラウザを起動
 　Packet-capture.bat  :tshark及びdumpcapを使用して自身のPCのパケットを取得
+  C#コンパイル.bat    :c#ソースをコンパイルするバッチ
+　　　使い方
+　　　　csc.exeとVisual Studio Codeで始めるWindowsC#プログラミング
+　　　　https://qiita.com/nekotadon/items/8e714bb2a82c9991f6a4
 【Powershell】
   Server-syslog.ps1    : PSによる簡易syslogサーバ
 【Teretermマクロ】
