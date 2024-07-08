@@ -15,3 +15,10 @@
   Server-syslog.ps1    : PSによる簡易syslogサーバ
 【Teretermマクロ】
   IP入力Policy変更.ttl :Juniper SRXにおいてセキュリティポリシーを表示するためのテラタームマクロ
+【Pythonスクリプト】
+　ping.py
+　　予め指定したIPアドレスに対してpingを実施する
+  ping-1.py
+    入力したIPアドレスに対してpingを実施する
+
+
