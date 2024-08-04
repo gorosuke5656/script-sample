@@ -20,5 +20,7 @@
   ping-1.py　：入力したIPアドレスに対してpingを実施する
 　dns-check  :名前解決を実施する
 　ping-csv-inport.csv :csvで読み込んだIPアドレスに対してpingを実施する
+  web-access.py:入力したURLに対してレスポンスコードを返す
+
 
 
