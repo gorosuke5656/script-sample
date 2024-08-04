@@ -22,6 +22,7 @@
 　ping-csv-inport.csv :csvで読み込んだIPアドレスに対してpingを実施する
 　　　"ip_addresses.csv"：IPアドレスのリスト
   web-access.py:入力したURLに対してレスポンスコードを返す
+　web-access-save.py:入力したURLに対してアクセスした結果をテキストに保存する
 
 
 
