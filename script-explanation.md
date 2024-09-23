@@ -7,6 +7,8 @@
  (4) 名前解決及びWebチェックバッチ（DNS-Web-check.bat) <br>
  (5) NWチェック総合バッチ（NW-check.bat) <br>
  (6) Wiresharkで一定時間パケットを作成し、自動保存するバッチ作成と確認（packet-capture.bat)<br>
+   自動的にパケットキャプチャを実施するWindowsバッチ<br>
+      記事 https://gorosuke5656.hatenablog.com/entry/2024/01/08/015947<br>
 
 
 
