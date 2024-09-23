@@ -5,8 +5,8 @@
 ## 内容<br>
 〇　環境準備：　[次のチャプターへ進む](./preparation.md) <br>
 
- **1 Windowsバッチによるスクリプト**
- (1)  バッチ作成時に共通的に設定する項目
+ **1 Windowsバッチによるスクリプト**<br>
+ (1)  バッチ作成時に共通的に設定する項目<br>
  (2)　NW環境確認バッチ（ip-state.bat) <br>
  (3)　PING確認バッチ（Ping-check.bat) <br>
  (4)　名前解決及びWebチェックバッチ（DNS-Web-check.bat) <br>
