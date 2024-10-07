@@ -4,7 +4,7 @@
 【Windowsバッチ、Python】<br>
 
 ## 内容<br>
-Windowsバッチ作成および確認：　　 　[次のチャプターへ進む](./Windows-bat-script.md) <br>
+Windowsバッチ作成および確認：　　　[次のチャプターへ進む](./Windows-bat-script.md) <br>
 Pythonスクリプト作成および確認：　  [次のチャプターへ進む](./Python-script.md/)<br>
 
 
