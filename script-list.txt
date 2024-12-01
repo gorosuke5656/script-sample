@@ -11,6 +11,8 @@
 　　　使い方
 　　　　csc.exeとVisual Studio Codeで始めるWindowsC#プログラミング
 　　　　https://qiita.com/nekotadon/items/8e714bb2a82c9991f6a4
+ cheack.bat   :複数のIPアドレスとポート番号に対してTest-NetConnectionを実施し、結果を出力するスクリプト
+ targets.txt　: cheack.batを実行するためのリスト
 【Powershell】
   Server-syslog.ps1    : PSによる簡易syslogサーバ
 【Teretermマクロ】
