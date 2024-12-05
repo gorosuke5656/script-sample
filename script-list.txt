@@ -25,6 +25,8 @@
 　　　"ip_addresses.csv"：IPアドレスのリスト
   web-access.py:入力したURLに対してレスポンスコードを返す
 　web-access-save.py:入力したURLに対してアクセスした結果をテキストに保存する
+ 【Linuxスクリプト】
+　　monitor_auth_log.sh:認証ログを定期的に監視するシェルスクリプト
 
 
 
