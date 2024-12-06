@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# 入力ファイル（IPアドレスとポート番号のリスト）
+INPUT_FILE="ip_list.txt"
+
+# 出力ファイル（結果保存先）
+OUTPUT_FILE="result.txt"
+
+# 出力ファイルを初期化
+> "$OUTPUT_FILE"
+
+# 入力ファイルを1行ずつ読み込む
+while IFS= read -r line; do
+    # 空行やコメント行はスキップ
+    [[ -z "$line" || "$line" == \#* ]] && continue
+
+    # IPアドレスとポート番号を分解
+    IP=$(echo "$line" | cut -d: -f1)
+    PORT=$(echo "$line" | cut -d: -f2)
+
+    # ncコマンドで疎通確認
+    if nc -z -w 5 "$IP" "$PORT"; then
+        echo "$IP:$PORT is reachable" >> "$OUTPUT_FILE"
+    else
+        echo "$IP:$PORT is unreachable" >> "$OUTPUT_FILE"
+    fi
+done < "$INPUT_FILE"
+
+echo "Check complete. Results saved to $OUTPUT_FILE"
