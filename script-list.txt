@@ -31,6 +31,8 @@
 
 【Linuxスクリプト:使用する際は拡張子をtxt→shに変更すること】
 　　moniter._auth_log.sh.txt:認証ログを定期的に監視するシェルスクリプト
+   check_ip_ports.sh.txt    :リスト化されたIPアドレスとポート番号に対して疎通確認するシェルスクリプト
+　　
 
 
 
