@@ -13,10 +13,13 @@
 　　　　https://qiita.com/nekotadon/items/8e714bb2a82c9991f6a4
  cheack.bat   :複数のIPアドレスとポート番号に対してTest-NetConnectionを実施し、結果を出力するスクリプト
  targets.txt　: cheack.batを実行するためのリスト
+
 【Powershell】
   Server-syslog.ps1    : PSによる簡易syslogサーバ
+
 【Teretermマクロ】
   IP入力Policy変更.ttl :Juniper SRXにおいてセキュリティポリシーを表示するためのテラタームマクロ
+
 【Pythonスクリプト】
 　ping.py　　：予め指定したIPアドレスに対してpingを実施する
   ping-1.py　：入力したIPアドレスに対してpingを実施する
@@ -25,8 +28,9 @@
 　　　"ip_addresses.csv"：IPアドレスのリスト
   web-access.py:入力したURLに対してレスポンスコードを返す
 　web-access-save.py:入力したURLに対してアクセスした結果をテキストに保存する
- 【Linuxスクリプト】
-　　monitor_auth_log.sh:認証ログを定期的に監視するシェルスクリプト
+
+【Linuxスクリプト:使用する際は拡張子をtxt→shに変更すること】
+　　moniter._auth_log.sh.txt:認証ログを定期的に監視するシェルスクリプト
 
 
 
