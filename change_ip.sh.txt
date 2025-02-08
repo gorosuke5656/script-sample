@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# 使用するネットワークインターフェース名を指定
+INTERFACE="ens33"
+
+# 固定IPアドレスの設定
+STATIC_IP="192.168.1.100"
+GATEWAY="192.168.1.1"
+DNS="8.8.8.8"
+
+# スクリプトの使い方
+usage() {
+    echo "Usage: $0 {dhcp|static}"
+    exit 1
+}
+
+# DHCPに変更
+set_dhcp() {
+    echo "Setting $INTERFACE to use DHCP..."
+    nmcli con mod "$INTERFACE" ipv4.addresses ""   # 既存のIPをクリア
+    nmcli con mod "$INTERFACE" ipv4.gateway ""     # ゲートウェイをクリア
+    nmcli con mod "$INTERFACE" ipv4.dns ""         # DNSをクリア
+    nmcli con mod "$INTERFACE" ipv4.method auto
+    nmcli con up "$INTERFACE"
+    echo "DHCP設定に変更されました。"
+
+# 設定確認
+    echo "デフォルトゲートウェイ:"
+    ip route show default
+
+}
+
+# 固定IPに変更
+set_static() {
+    echo "Setting $INTERFACE to use static IP..."
+    nmcli con mod "$INTERFACE" ipv4.addresses ""   # 既存のIPをクリア
+    nmcli con mod "$INTERFACE" ipv4.gateway ""     # ゲートウェイをクリア
+    nmcli con mod "$INTERFACE" ipv4.dns ""         # DNSをクリア
+    nmcli con mod "$INTERFACE" ipv4.addresses "$STATIC_IP/24"
+    nmcli con mod "$INTERFACE" ipv4.gateway "$GATEWAY"
+    nmcli con mod "$INTERFACE" ipv4.dns "$DNS"
+    nmcli con mod "$INTERFACE" ipv4.method manual
+    nmcli con up "$INTERFACE"
+    echo "固定IP設定に変更されました: $STATIC_IP"
+}
+
+# 引数チェック
+if [ "$#" -ne 1 ]; then
+    usage
+fi
+
+# DHCPまたは固定IPを設定
+case "$1" in
+    dhcp)
+        set_dhcp
+        ;;
+    static)
+        set_static
+        ;;
+    *)
+        usage
+        ;;
+esac
