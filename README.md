@@ -3,8 +3,9 @@
 ネットワークの疎通確認等で使用するスクリプトのサンプルを格納しています<br>
 【Windowsバッチ、Python】<br>
 
-## 内容<br>
-Windowsバッチ作成および確認：　　　[次のチャプターへ進む](./Windows-bat-script.md) <br>
+## 内容<br>　
+Windowsバッチ作成および確認：　　　　[次のチャプターへ進む](./Windows-bat-script.md) <br>
+Linusシェルスクリプト作成及び確認：　[次のチャプターへ進む](./Linux-shellscript.md) <br>
 Pythonスクリプト作成および確認：　  [次のチャプターへ進む](./Python-script.md/)<br>
 
 
