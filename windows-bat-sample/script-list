@@ -5,6 +5,8 @@
   PING-check-1.bat    ：入力したIPアドレスに対してPINGを実施し、結果をファイルに格納
   PING-check-2.bat    :　埋め込まれたv4アドレスにPINGを実施し、結果をファイルに格納(応答結果を〇、×で表示）
   PING-check-3.bat    :　入力したIPアドレスに対してPINGを実施し、結果をファイルに格納(応答結果を〇、×で表示）
+  PING-csv-read.bat   :　csvに記述されているIPアドレスを読みこんで、PINGを送出する
+　　　　　　〇ip_addresses.csv :読み込むcsvファイル
 　DNS-Web-check.bat  :v4/v6の名前解決及びcurlによるv4/v6でのレスポンス確認結果をファイルに格納及びブラウザを起動
 　Packet-capture.bat  :tshark及びdumpcapを使用して自身のPCのパケットを取得
   C#コンパイル.bat    :c#ソースをコンパイルするバッチ
