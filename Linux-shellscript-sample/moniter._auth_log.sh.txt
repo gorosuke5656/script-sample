@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# 監視対象ログファイル
+LOG_FILE="/var/log/auth.log"
+
+# 前回チェックした行番号を記録するファイル
+OFFSET_FILE="/tmp/auth_log_offset"
+
+# 初回実行時の設定
+if [ ! -f "$OFFSET_FILE" ]; then
+    echo "0" > "$OFFSET_FILE"
+fi
+
+# 前回の行番号を取得
+LAST_OFFSET=$(cat "$OFFSET_FILE")
+
+# 現在の行数を取得
+CURRENT_OFFSET=$(wc -l < "$LOG_FILE")
+
+# 新しいログエントリがある場合のみ処理
+if [ "$CURRENT_OFFSET" -gt "$LAST_OFFSET" ]; then
+    # 新しいログエントリを取得
+    NEW_LOGS=$(tail -n +"$((LAST_OFFSET + 1))" "$LOG_FILE")
+    
+    # 新しいログエントリを出力または処理
+    echo "New log entries found:"
+    echo "$NEW_LOGS"
+    
+    # 必要に応じてアラート処理（例: 特定キーワードを含むエントリを検出）
+    echo "$NEW_LOGS" | grep -i "failed" && echo "Failed login attempt detected!"
+
+    # 行番号を更新
+    echo "$CURRENT_OFFSET" > "$OFFSET_FILE"
+else
+    echo "No new log entries."
+fi
