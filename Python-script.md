@@ -9,7 +9,8 @@
 
 ## １　Python3のインストール<br>
 <img width="1038" height="684" alt="image" src="https://github.com/user-attachments/assets/7b02fc2d-6801-4360-a8be-5d7743b95dd8" />
-## https://www.python.org/download<br>
+### Pythonのダウンロードサイト
+https://www.python.org/download<br>
 
 <img width="1040" height="727" alt="image" src="https://github.com/user-attachments/assets/512a69aa-aad4-41dc-88fa-1cf0ea9aa168" />
 
@@ -21,7 +22,9 @@
 
 ## ２　エディタ（Vscode）のインストール<br>
 <img width="1046" height="718" alt="image" src="https://github.com/user-attachments/assets/1ded4ea6-bb29-47aa-9e60-ec5cd25a217e" />
-## https://code.visualstudio.com/<br>
+
+### Vscodeのダウンロードサイト
+https://code.visualstudio.com/<br>
 
 ### ３　VscodeでPythonの実行環境を設定<br>
 <img width="1040" height="720" alt="image" src="https://github.com/user-attachments/assets/91b804bc-e879-4075-aff5-07b3d37df84b" />
