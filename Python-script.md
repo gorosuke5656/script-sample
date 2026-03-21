@@ -9,6 +9,7 @@
 
 ## １　Python3のインストール<br>
 <img width="1038" height="684" alt="image" src="https://github.com/user-attachments/assets/7b02fc2d-6801-4360-a8be-5d7743b95dd8" />
+
 ### Pythonのダウンロードサイト
 https://www.python.org/download<br>
 
