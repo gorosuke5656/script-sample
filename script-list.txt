@@ -15,7 +15,10 @@
  　”targets.txt”　: cheack.batを実行するためのリスト
 
 【Powershell】
-  Server-syslog.ps1    : PSによる簡易syslogサーバ
+  Server-syslog.ps1   　　　 : PSによる簡易syslogサーバスクリプト
+　ping-check-new-v4.ps1　　  ：指定したIPV4アドレスを指定してpingコマンドを実行するスクリプト
+　tracert-check-v4.ps1　　　 ：指定したIPv4アドレスを指定してtracertコマンドを実行するスクリプト
+　tracert-check-v6.ps1　　　 ：指定したIPv6アドレスを指定してtracertコマンドを実行するスクリプト
 
 【Teretermマクロ】
   IP入力Policy変更.ttl :Juniper SRXにおいてセキュリティポリシーを表示するためのテラタームマクロ
